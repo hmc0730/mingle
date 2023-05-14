@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홍보 게시판</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/css.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="head-container">
+          <div class="head-brand">MINGLE</div>
+        </div>
+      </div>
+    </header>
+    <div class="board_wrap">
+      <div class="board_title">
+        <p>같이 활동하실 단체를 찾습니다.</p>
+      </div>
+      <div class="board_write_wrap">
+        <div class="board_write">
+          <div class="title">
+            <div class="title_info">
+              <dl>
+                <dt>제목</dt>
+              </dl>
+            </div>
+            <div class="title_input">
+              <dd><input type="text" placeholder="제목 입력" /></dd>
+            </div>
+          </div>
+          <div class="info">
+            <dl>
+              <dt>글쓴이</dt>
+              <dd><input type="text" placeholder="글쓴이 입력" /></dd>
+            </dl>
+            <dl>
+              <dt>비밀번호</dt>
+              <dd><input type="password" placeholder="비밀번호 입력" /></dd>
+            </dl>
+          </div>
+          <div class="cont">
+            <textarea placeholder="내용 입력"></textarea>
+          </div>
+        </div>
+        <div class="upload">
+          <form
+            action="http://localhost/upload.php"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="file" name="profile" />
+            <input type="submit" />
+          </form>
+        </div>
+        <div class="bt_wrap">
+          <a href="index_match.html" class="on">등록</a>
+          <a href="index_match.html">취소</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="inner">
+      <div class="footer-message">
+        이용자를 위해 끊임없이 노력하겠습니다. 문의 사항은 아래 이메일로
+        보내주시기 바랍니다.
+      </div>
+      <div class="footer-contact">youan1024@korea.ac.kr</div>
+      <div class="footer-copyright">Copyright 2023 © All rights reserved.</div>
+    </div>
+  </footer>
+</html>
